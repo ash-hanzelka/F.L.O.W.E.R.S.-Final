@@ -1,0 +1,28 @@
+/Users/ashleyhanzelka/Desktop/spring2025/senior design/appDev/smar_gar_flowers
+
+smar_gar_flowers    // flutter project name
+    | assets
+        | images
+            | gifsEnvironments
+                | soilMoist
+                    | dry1.gif
+                    | dry2.gif
+                    ...
+    | ios
+    | lib
+        | dataModels    (data models for local storage with Hive )
+            | plant.dart    (data structure definitions for Plant objects)
+            | plant.g.dart  (auto generated with the flutter build command)
+        | screens
+            | connection_instruction_screen.dart    (walks the user through connecting with esp32)
+            | environment_screen.dart               (the 3D model and which plants assigned to which cubbies)
+            | home_screen.dart                      (the home screen -- greeting, hot keys, current plants in cubbies)
+            | plants_screen.dart                    (user's plant library)
+            | settings_screen.dart                  (settings for the user: notifications, esp32 setup, auto watering mode, etc.)
+            | stats_screen.dart                     (shows water stats, usage, power usage, water capacity)
+            | hotkeys
+                | climate_hotkey_screen
+                | water_hotkey_screen
+                | climate_hotkey_screen
+        | main.dart     (initializes all screens and Hive objects & implements NavBar, sets home_screen as main screen)
+    | pubsec.yaml 
